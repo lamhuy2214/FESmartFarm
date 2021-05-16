@@ -27,8 +27,8 @@ const Dashboard = () => {
         <CCardBody>
           <CRow>
             <CCol sm="5">
-              <h4 id="traffic" className="card-title mb-0">Traffic</h4>
-              <div className="small text-muted">November 2017</div>
+              <h4 id="Statistic" className="card-title mb-0">Statistic</h4>
+              <div className="small text-muted">July 2021</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
               <CButton color="primary" className="float-right">
@@ -55,8 +55,8 @@ const Dashboard = () => {
         <CCardFooter>
           <CRow className="text-center">
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Visits</div>
-              <strong>29.703 Users (40%)</strong>
+              <div className="text-muted">Humidity</div>
+              <strong>(60%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -65,18 +65,18 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Unique</div>
-              <strong>24.093 Users (20%)</strong>
+              <div className="text-muted">Brightness</div>
+              <strong>100</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
                 color="info"
-                value={40}
+                value={70}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Pageviews</div>
-              <strong>78.706 Views (60%)</strong>
+              <div className="text-muted">Temperature</div>
+              <strong>30</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -85,18 +85,18 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">New Users</div>
-              <strong>22.123 Users (80%)</strong>
+              <div className="text-muted">Sunshine time</div>
+              <strong>75%</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
                 color="danger"
-                value={40}
+                value={75}
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Bounce Rate</div>
-              <strong>Average Rate (40.15%)</strong>
+              <div className="text-muted">Hot day</div>
+              <strong>12 day</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -107,9 +107,9 @@ const Dashboard = () => {
         </CCardFooter>
       </CCard>
 
-      <WidgetsBrand withCharts/>
+      {/* <WidgetsBrand withCharts/> */}
 
-      <CRow>
+      {/* {/* <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
@@ -544,12 +544,12 @@ const Dashboard = () => {
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> 
 
-            </CCardBody>
+            </CCardBody> 
           </CCard>
-        </CCol>
-      </CRow>
+        </CCol> 
+      </CRow>*/}
     </>
   )
 }

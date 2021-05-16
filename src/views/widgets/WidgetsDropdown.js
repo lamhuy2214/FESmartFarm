@@ -11,15 +11,18 @@ import {
 import CIcon from '@coreui/icons-react'
 import ChartLineSimple from '../charts/ChartLineSimple'
 import ChartBarSimple from '../charts/ChartBarSimple'
+import Clock from 'react-live-clock';
+
 
 const WidgetsDropdown = () => {
+  
   // render
   return (
     <CRow>
       <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="gradient-primary"
-          header="9.823"
+          header="90%"
           text="Humidity"
           footerSlot={
             <ChartLineSimple
@@ -28,7 +31,7 @@ const WidgetsDropdown = () => {
               style={{height: '70px'}}
               dataPoints={[65, 59, 84, 84, 51, 55, 40]}
               pointHoverBackgroundColor="primary"
-              label="Members"
+              label="Humidity"
               labels="months"
             />
           }
@@ -50,8 +53,8 @@ const WidgetsDropdown = () => {
       <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="gradient-info"
-          header=""
-          text="Members online"
+          header="100"
+          text="Light"
           footerSlot={
             <ChartLineSimple
               pointed
@@ -60,7 +63,7 @@ const WidgetsDropdown = () => {
               dataPoints={[1, 18, 9, 17, 34, 22, 11]}
               pointHoverBackgroundColor="info"
               options={{ elements: { line: { tension: 0.00001 }}}}
-              label="Members"
+              label="Light"
               labels="months"
             />
           }
@@ -82,14 +85,14 @@ const WidgetsDropdown = () => {
       <CCol sm="6" lg="3">
         <CWidgetDropdown
           color="gradient-warning"
-          header="9.823"
-          text="Members online"
+          header="35 &ordm C"
+          text="Temperature"
           footerSlot={
             <ChartLineSimple
               className="mt-3"
               style={{height: '70px'}}
               backgroundColor="rgba(255,255,255,.2)"
-              dataPoints={[78, 81, 80, 45, 34, 12, 40]}
+              dataPoints={[28, 31, 30, 35, 24, 22, 30]}
               options={{ elements: { line: { borderWidth: 2.5 }}}}
               pointHoverBackgroundColor="warning"
               label="Members"
@@ -112,16 +115,19 @@ const WidgetsDropdown = () => {
       </CCol>
 
       <CCol sm="6" lg="3">
+      
         <CWidgetDropdown
           color="gradient-danger"
-          header="9.823"
-          text="Members online"
+          header="Date"
+          
+          text= {<Clock format={'   dddd, MMMM Mo, YYYY'} ticking={true} onChange={date => console.log(date) }/>}
+          
+          
           footerSlot={
             <ChartBarSimple
               className="mt-3 mx-3"
               style={{height: '70px'}}
-              backgroundColor="rgb(250, 152, 152)"
-              label="Members"
+              label="Clock"
               labels="months"
             />
           }

@@ -133,7 +133,7 @@ const Charts = () => {
           <CChartPolarArea
             datasets={[
               {
-                label: 'My First dataset',
+                label: 'Brightness',
                 backgroundColor: 'rgba(179,181,198,0.2)',
                 pointBackgroundColor: 'rgba(179,181,198,1)',
                 pointBorderColor: '#fff',
@@ -142,7 +142,7 @@ const Charts = () => {
                 data: [65, 59, 90, 81, 56, 55, 40]
               },
               {
-                label: 'My Second dataset',
+                label: 'Humidity',
                 backgroundColor: 'rgba(255,99,132,0.2)',
                 pointBackgroundColor: 'rgba(255,99,132,1)',
                 pointBorderColor: '#fff',
